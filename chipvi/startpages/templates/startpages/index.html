@@ -1,0 +1,231 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<main>
+
+		<section class="main-screen">
+			<div class="main-screen__wrapper">
+				<div class="main-screen__item">
+					<h1 class="main-screen__title">
+						Диагностика
+						неисправностей
+						на электронных
+						платах
+					</h1>
+					<div class="main-screen__subtitle">
+						Помощь в ремонте электроники
+						с использованием нейронных сетей
+					</div>
+					<div class="main-screen__btn-wrapper">
+						<a href="#" class="page__blue-btn">Скачать приложение</a>
+						<a href="#" class="page__trcy-btn">Онлайн-сервис</a>
+					</div>
+				</div>
+				<div class="main-screen__item main-screen__item_img">
+					<img src="{% static 'src/img/main-1.png' %}" alt="">
+				</div>
+			</div>
+		</section>
+
+		<section class="advantage">
+			<div class="advantage__wrapper">
+				<h2 class="page__title">
+					Преимущества <span>Chip-vi</span>
+				</h2>
+				<div class="page__low-desc">
+					Мобильное приложение Chip-vi предназначено для повышения эффективности процесса ремонта любительской и бытовой
+					электроники, а также для решения отдельных задач – поиска и устранения неисправностей отдельных элементов,
+					цепей и узлов.
+				</div>
+				<div class="advantage__items">
+
+					<div class="advantage__item">
+						<img src="{% static 'src/img/icon-1.svg' %}" alt="">
+						<div class="advantage__title">
+							Уникальный метод поиска
+							неисправностей на платах
+						</div>
+						<div class="advantage__desc">
+							По своей сути рыбатекст является альтернативой традиционному lorem ipsum, который вызывает у некторых
+							людей недоумение при попытках прочитать рыбу текст.
+						</div>
+					</div>
+
+					<div class="advantage__item">
+						<img src="{% static 'src/img/icon-2.svg' %}" alt="">
+						<div class="advantage__title">
+							Применения технологии
+							дополненной реальности
+						</div>
+						<div class="advantage__desc">
+							По своей сути рыбатекст является альтернативой традиционному lorem ipsum, который вызывает у некторых
+							людей недоумение при попытках прочитать рыбу текст.
+						</div>
+					</div>
+
+					<div class="advantage__item">
+						<img src="{% static 'src/img/icon-3.svg' %}" alt="">
+						<div class="advantage__title">
+							Диагностика в режиме
+							реального времени
+						</div>
+						<div class="advantage__desc">
+							По своей сути рыбатекст является альтернативой традиционному lorem ipsum, который вызывает у некторых
+							людей недоумение при попытках прочитать рыбу текст.
+						</div>
+					</div>
+
+					<div class="advantage__item">
+						<img src="{% static 'src/img/icon-4.svg' %}" alt="">
+						<div class="advantage__title">
+							Применение обучающихся
+							нейронных сетей
+						</div>
+						<div class="advantage__desc">
+							По своей сути рыбатекст является альтернативой традиционному lorem ipsum, который вызывает у некторых
+							людей недоумение при попытках прочитать рыбу текст.
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</section>
+
+		<section class="how-works">
+
+			<div class="how-works__header">
+				<h2 class="page__title">
+					Как работает приложение
+				</h2>
+				<div class="page__low-desc">
+					Приложение предназначено для использования на мобильных устройствах под управлением операционной системы
+					Android. Разработано в программной среде Android Studio и представляет собой клиент-серверное приложение
+				</div>
+			</div>
+
+			<div class="how-works__wrapper">
+
+				<div class="how-works__item">
+					<div class="how-works__text-wrapper">
+						<div class="markup__header">
+							<div class="markup__num">1</div>
+							<div class="markup__title">
+								Скачайте приложение Chip-vi
+							</div>
+						</div>
+						<div class="markup__text">
+							<a href="#">Скачайте</a>
+							приложение в формате *.apk на смартфон.
+							Установите его и запустите. <br>
+							<br>
+							В настоящий момент приложение распространяется только через наш сайт. <br>
+							Вскоре мы также разместим его и в Google Play.
+						</div>
+					</div>
+					<div class="how-works__img-wrapper">
+						<img src="{% static 'src/img/main-2.png' %}" alt="">
+					</div>
+				</div>
+
+				<div class="how-works__item how-works__item_2">
+					<div class="how-works__img-wrapper">
+						<img src="{% static 'src/img/main-3.png' %}" alt="">
+					</div>
+					<div class="how-works__text-wrapper">
+						<div class="markup__header">
+							<div class="markup__num">2</div>
+							<div class="markup__title">
+								Загрузите изображение <br>
+								платы в приложение
+							</div>
+						</div>
+						<ul class="markup__text">
+							<li>
+								<span>Нажмите кнопку «Начать» на главном экране приложения.</span>
+							</li>
+							<li>
+								<span>Выберите источник получения изображения платы.</span>
+								<br>
+								<br>
+								<span>
+									Изображение может быть получено с камеры мобильного устройства или загружено из галереи
+									устройства, если
+									фото было сделано заранее.
+								</span>
+								<br><br>
+							</li>
+
+							<li>
+								<span>Удостоверьтесь, что на изображении хорошо видны все компоненты платы и нажмите</span>
+								<i><img src="./src/img/ok.svg" alt=""></i>
+							</li>
+						</ul>
+					</div>
+
+				</div>
+
+				<div class="how-works__item how-works__item_3">
+					<div class="how-works__text-wrapper">
+						<div class="markup__header">
+							<div class="markup__num">3</div>
+							<div class="markup__title">
+								Получение результа диагностики
+							</div>
+						</div>
+						<div class="markup__text_italic">
+							На этом этапе изображение отправляется на сервер, где происходит его обработка нейросетью с целью
+							распознавания отдельных компонентов, оценки их целостности, номиналов, типов, а также качества пайки.
+							<br><br>
+							После того как изображение отработается на сервере, оно откроется в приложении, но уже с отмеченными
+							неисправностями.
+							<br><br>
+							Распознанное изображение, дополненное данными, полученными от нейронной сети, отображается в окне
+							приложения. Далее вы можете получить подсказки по поиску неисправностей.
+						</div>
+					</div>
+					<div class="how-works__img-wrapper">
+						<img src="{% static 'src/img/main-4.png' %}" alt="">
+					</div>
+				</div>
+
+			</div>
+
+			<div class="how-works__bottom">
+				<div class="markup__text_italic">
+					Возникшие вопросы по работе приложения <br>
+					можно уточнить на странице Вопросы/Ответы
+				</div>
+				<a href="{% url 'faq' %}" class="page__trcy-btn">
+					Подробнее
+				</a>
+			</div>
+
+		</section>
+
+		<section class="target">
+
+			<div class="target__item">
+				<div class="page__title">
+					Цель проекта, планы развития
+				</div>
+				<div class="markup__text">
+					Мы разработали эту систему для того, что бы помочь студентам-электронщикам, начинающим радиолюбителям, а так
+					же сервисным центрам по ремонту профильного узкоспециализированного оборудования, приборов и электронных
+					устройств.
+					<br><br>
+					Данный сервис призван помочь делать свои первые шаги новичкам, а профессионалам - повышать уровень своего
+					мастерства и сокращать время рутинных операций.
+					Обратная связь
+				</div>
+				<a href="#" class="page__blue-btn">Обратная связь</a>
+			</div>
+			<img src="{% static 'src/img/main-5.png' %}" alt="">
+
+		</section>
+
+	</main>
+
+
+{% endblock %}

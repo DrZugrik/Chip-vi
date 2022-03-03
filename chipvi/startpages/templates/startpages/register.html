@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<main>
+
+Register
+
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit" class="btn btn-primry btn-block">Добавить</button>
+
+
+</form>
+
+	</main>
+
+
+{% endblock %}

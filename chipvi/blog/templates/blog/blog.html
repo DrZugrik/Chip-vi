@@ -1,0 +1,117 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+
+<main>
+
+		<div class="breadcrumps">
+			<a href="/">Главная</a> <a href="/">></a> <a href="/blog">Блог</a>
+		</div>
+
+		<div class="blog__header">
+			<h1 class="page__title">
+				{{ title }}
+			</h1>
+			<div class="page__subtitle">Обсуждаемое</div>
+		</div>
+
+		<section class="blog blog-hot">
+			<div class="blog__wrapper">
+
+			{% for item in posts %}
+				<div class="blog__item">
+
+					<h2 class="blog__header">
+						{{ item.title }}
+					</h2>
+
+					<div class="blog__image-wrapper">
+						<img src="{% static 'img/image28.png' %}" alt="">
+					</div>
+
+					<div class="blog__text">
+						{{ item.content }}
+					</div>
+
+					<div class="blog__footer">
+						<div class="blog__footer-info">
+							<div class="blog__footer-date">
+								<div class="value">{{ item.created_at }}</div>
+							</div>
+							<div class="blog__footer-views">
+								<img src="{% static 'img/Eye.svg' %}" alt="">
+								<div class="value">{{ item.views }}</div>
+							</div>
+							<div class="blog__footer-comments">
+								<img src="{% static 'img/Message.svg' %}" alt="">
+								<div class="value">23</div>
+							</div>
+						</div>
+
+						<a href="#" class="blog__footer-btn">
+							Читать далее
+						</a>
+					</div>
+
+
+				</div>
+			{% endfor %}
+
+
+
+
+
+
+				<div class="blog__pagination-wrapper">
+					<a href="#" class="blog__pagination">
+						< </a>
+							<a href="#" class="blog__pagination">1</a>
+							<a href="#" class="blog__pagination selected">2</a>
+							<a href="#" class="blog__pagination">3</a>
+							<a href="#" class="blog__pagination">...</a>
+							<a href="#" class="blog__pagination">23</a>
+							<a href="#" class="blog__pagination">24</a>
+							<a href="#" class="blog__pagination">></a>
+				</div>
+			</div>
+
+
+
+
+			<div class="blog__hot">
+
+				{% for item in posts %}
+				<div class="blog__item">
+					<a href="#" class="blog__header">
+						{{ item.title }}
+					</a>
+
+					<div class="blog__footer">
+						<div class="blog__footer-info">
+							<div class="blog__footer-date">
+								<div class="value">{{ item.created_at }}</div>
+							</div>
+							<div class="blog__footer-views">
+								<img src="{% static 'img/Eye.svg' %}" alt="">
+								<div class="value">{{ item.views }}</div>
+							</div>
+							<div class="blog__footer-comments">
+								<img src="{% static 'img/Message.svg' %}" alt="">
+								<div class="value">23</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				{% endfor %}
+
+			</div>
+
+
+		</section>
+
+	</main>
+
+
+{% endblock %}

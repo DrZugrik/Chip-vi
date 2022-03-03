@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,600;1,400&display=swap"
+		rel="stylesheet">
+	<link type="image/png" href="./src/favicon.png" rel="icon">
+	<link type="image/x-icon" href="./src/favicon.ico" rel="shortcut icon">
+
+	<link rel="stylesheet" href="style.css">
+	<script deffer src="script.js"></script>
+
+	<title>Chip-vi</title>
+</head>
+
+<body>
+
+	<header>
+
+		<div class="burger-wrapper">
+			<div class="burger">
+				<span></span>
+			</div>
+		</div>
+
+		<div class="header__wrapper">
+			<div class="header__inner-wrapper">
+				<div class="logo">
+					Chip-vi
+				</div>
+				<div class="header__links">
+					<a href="/" draggable="false" class="header__link">
+						Главная
+					</a>
+					<a href="/app.html" draggable="false" class="header__link">
+						Онлайн приложение
+					</a>
+					<a href="#" draggable="false" class="header__link">
+						FAQ
+					</a>
+					<a href="/help.html" draggable="false" class="header__link">
+						Помощь проекту
+					</a>
+					<a href="/blog/" draggable="false" class="header__link">
+						Блог
+					</a>
+					<a href="#" draggable="false" class="header__change-lang">
+						<span>
+							РУС
+						</span>
+						<img src="./src/img/arrow-down.svg" alt="">
+					</a>
+				</div>
+				<div class="header__right-wrapper">
+					<div class="header__log-sign-in">
+						<a href="#" draggable="false" class="header__signin">Вход</a>
+						<a href="#" draggable="false" class="header__login">Регистрация</a>
+					</div>
+					<a href="#" class="page__trcy-btn">
+						Скачать приложение
+					</a>
+					<a href="#" class="header__user-btn _hidden">
+						<div class="header__user-icon">
+							<img src="./src/img/user.svg" alt="">
+						</div>
+						User Name
+						<img class="header__user-arrow" src="./src/img/arrow-down-white.svg" alt="">
+						<div class="header__user-menu">
+							<div class="header__user-item">
+								<img src="./src/img/user-empty.svg" alt="">
+								<div>Личный кабинет</div>
+
+							</div>
+							<div class="header__user-item">
+								<img src="./src/img/exit.svg" alt="">
+								Выйти
+							</div>
+						</div>
+					</a>
+				</div>
+			</div>
+
+		</div>
+
+	</header>
+
+	<main>
+
+		<section class="diagnosys">
+			<div class="diagnosys__wrapper">
+				<h2 class="page__title">
+					Онлайн диагностика плат
+				</h2>
+				<div class="page__low-desc">
+					Онлайн приложение Chip-vi предназначено для повышения эффективности процесса ремонта любительской и бытовой
+					электроники, а также для решения отдельных задач – поиска и устранения неисправностей отдельных элементов,
+					цепей и узлов.
+				</div>
+				<div class="diagnosys__content">
+					<div class="diagnosys__btns-wrapper">
+						<div class="diagnosys__btns-inner-wrapper">
+							<a href="#" class="diagnosys__btn diagnosys__btn_img">
+								<img src="./src/img/file.svg" alt="">
+							</a>
+							<a href="#" class="diagnosys__btn diagnosys__btn_img">
+								<img src="./src/img/save.svg" alt="">
+							</a>
+							<a href="#" class="diagnosys__btn diagnosys__btn_img">
+								<img src="./src/img/folder1.svg" alt="">
+							</a>
+							<a href="#" class="diagnosys__btn diagnosys__btn_img">
+								<img src="./src/img/download1.svg" alt="">
+							</a>
+						</div>
+						<div class="diagnosys__btns-inner-wrapper">
+							<a href="#" class="diagnosys__btn diagnosys__btn_img">
+								<img src="./src/img/rotate.svg" alt="">
+							</a>
+							<a href="#" class="diagnosys__btn diagnosys__btn_img">
+								<img src="./src/img/rotate2.svg" alt="">
+							</a>
+							<a href="#" class="diagnosys__btn diagnosys__btn_img">
+								<img src="./src/img/rotate3.svg" alt="">
+							</a>
+						</div>
+						<div class="diagnosys__btns-inner-wrapper">
+							<a href="#" class="diagnosys__btn diagnosys__btn_img">
+								<img src="./src/img/search.svg" alt="">
+							</a>
+						</div>
+					</div>
+					<div class="diagnosys__bottom">
+						<div class="diagnosys__tabs-wrapper">
+							<input type=radio name="tabs" id="tab-first" checked>
+							<label for="tab-first">Обзор проекта</label>
+							<input type=radio name="tabs" id="tab-sec">
+							<label for="tab-sec">Верхняя сторона</label>
+							<input type=radio name="tabs" id="tab-third">
+							<label for="tab-third">Нижняя сторона</label>
+							<div id="diagnosys__tab_1" class="diagnosys__tab-content">
+								<div class="diagnosys__board-wrapper">
+									<div class="diagnosys__files-wrapper">
+										<div class="diagnosys__file">
+											<img src="./src/img/files/json.svg" alt="json">
+											<div class="diagnosys__file-name">
+												project_sdcvsdcfsdsdcsacas.json
+											</div>
+										</div>
+										<div class="diagnosys__file">
+											<img src="./src/img/files/Xml.svg" alt="json">
+											<div class="diagnosys__file-name">
+												project_1.xml
+											</div>
+										</div>
+										<div class="diagnosys__file">
+											<img src="./src/img/files/Pic.svg" alt="json">
+											<div class="diagnosys__file-name">
+												img_2124124154.jpg
+											</div>
+										</div>
+										<div class="diagnosys__file">
+											<img src="./src/img/files/pdf.svg" alt="json">
+											<div class="diagnosys__file-name">
+												projectdoc.pdf
+											</div>
+										</div>
+										<div class="diagnosys__file">
+											<img src="./src/img/files/pdf.svg" alt="json">
+											<div class="diagnosys__file-name">
+												projectdoc.pdf
+											</div>
+										</div>
+										<div class="diagnosys__file">
+											<img src="./src/img/files/pdf.svg" alt="json">
+											<div class="diagnosys__file-name">
+												projectdoc.pdf
+											</div>
+										</div>
+										<div class="diagnosys__file">
+											<img src="./src/img/files/Pic.svg" alt="json">
+											<div class="diagnosys__file-name">
+												img_2124124154.jpg
+											</div>
+										</div>
+										<div class="diagnosys__file">
+											<img src="./src/img/files/Pic.svg" alt="json">
+											<div class="diagnosys__file-name">
+												img_2124124154.jpg
+											</div>
+										</div>
+										<div class="diagnosys__file">
+											<img src="./src/img/files/Pic.svg" alt="json">
+											<div class="diagnosys__file-name">
+												img_2124124154.jpg
+											</div>
+										</div>
+										<div class="diagnosys__file">
+											<img src="./src/img/files/Pic.svg" alt="json">
+											<div class="diagnosys__file-name">
+												img_2124124154.jpg
+											</div>
+										</div>
+										<div class="diagnosys__file">
+											<img src="./src/img/files/Pic.svg" alt="json">
+											<div class="diagnosys__file-name">
+												img_2124124154.jpg
+											</div>
+										</div>
+										<div class="diagnosys__file">
+											<img src="./src/img/files/Pic.svg" alt="json">
+											<div class="diagnosys__file-name">
+												img_2124124154.jpg
+											</div>
+										</div>
+										<div class="diagnosys__file">
+											<img src="./src/img/files/Pic.svg" alt="json">
+											<div class="diagnosys__file-name">
+												img_2124124154.jpg
+											</div>
+										</div>
+										<div class="diagnosys__file">
+											<img src="./src/img/files/Pic.svg" alt="json">
+											<div class="diagnosys__file-name">
+												img_2124124154.jpg
+											</div>
+										</div>
+										<div class="diagnosys__file">
+											<img src="./src/img/files/Pic.svg" alt="json">
+											<div class="diagnosys__file-name">
+												img_2124124154.jpg
+											</div>
+										</div>
+										<div class="diagnosys__file">
+											<img src="./src/img/files/Pic.svg" alt="json">
+											<div class="diagnosys__file-name">
+												img_2124124154.jpg
+											</div>
+										</div>
+										<div class="diagnosys__file">
+											<img src="./src/img/files/Pic.svg" alt="json">
+											<div class="diagnosys__file-name">
+												img_2124124154.jpg
+											</div>
+										</div>
+										<div class="diagnosys__file">
+											<img src="./src/img/files/Pic.svg" alt="json">
+											<div class="diagnosys__file-name">
+												img_2124124154.jpg
+											</div>
+										</div>
+										<div class="diagnosys__file">
+											<img src="./src/img/files/Pic.svg" alt="json">
+											<div class="diagnosys__file-name">
+												img_2124124154.jpg
+											</div>
+										</div>
+										<div class="diagnosys__file">
+											<img src="./src/img/files/pdf.svg" alt="json">
+											<div class="diagnosys__file-name">
+												projectdoc.pdf
+											</div>
+										</div>
+										<div class="diagnosys__file">
+											<img src="./src/img/files/json.svg" alt="json">
+											<div class="diagnosys__file-name">
+												project_sdcvsdcfsdsdcsacas.json
+											</div>
+										</div>
+										<div class="diagnosys__file">
+											<img src="./src/img/files/pdf.svg" alt="json">
+											<div class="diagnosys__file-name">
+												projectdoc.pdf
+											</div>
+										</div>
+										<div class="diagnosys__file">
+											<img src="./src/img/files/Xml.svg" alt="json">
+											<div class="diagnosys__file-name">
+												project_1.xml
+											</div>
+										</div>
+										<div class="diagnosys__file">
+											<img src="./src/img/files/pdf.svg" alt="json">
+											<div class="diagnosys__file-name">
+												projectdoc.pdf
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div id="diagnosys__tab_2" class="diagnosys__tab-content">
+								<div class="diagnosys__board-wrapper">
+									<div class="diagnosys__board-inner-wrapper">
+										<img src="./src/img/app-1.png" alt="">
+									</div>
+								</div>
+							</div>
+							<div id="diagnosys__tab_3" class="diagnosys__tab-content">
+								<div class="diagnosys__board-wrapper">
+									<div class="diagnosys__board-inner-wrapper">
+										<img src="./src/img/app-1.png" alt="">
+									</div>
+								</div>
+							</div>
+						</div>
+
+
+						<div class="diagnosys__input-wrapper">
+
+							<div class="diagnosys__item">
+								<div class="diagnosys__title">
+									Характеристики платы
+								</div>
+								<input type="text" class="input" placeholder="Наименование">
+								<div class="input__wrapper">
+									<input type="text" class="input" placeholder="Марка">
+									<a href="#" class="input__btn">
+										<img src="./src/img/input-btn/Pencil.svg" alt="">
+									</a>
+								</div>
+								<input type="text" class="input" placeholder="Тип">
+								<input type="text" class="input" placeholder="Производитель">
+								<div class="input__wrapper">
+									<input type="text" class="input" placeholder="Документация">
+									<a href="#" class="input__btn">
+										<img src="./src/img/input-btn/folder.svg" alt="">
+									</a>
+								</div>
+								<input type="text" class="input" placeholder="Состояние">
+							</div>
+
+							<div class="diagnosys__item">
+								<div class="diagnosys__title">
+									Характеристики элемента
+								</div>
+								<input type="text" class="input" placeholder="Тип">
+								<div class="input__wrapper">
+									<input type="text" class="input" placeholder="Обозначение">
+									<a href="#" class="input__btn">
+										<img src="./src/img/input-btn/Pencil.svg" alt="">
+									</a>
+								</div>
+								<div class="input__wrapper">
+									<input type="text" class="input" placeholder="Марка">
+									<a href="#" class="input__btn">
+										<img src="./src/img/input-btn/Pencil.svg" alt="">
+									</a>
+								</div>
+								<input type="text" class="input" placeholder="Тип корпуса">
+								<input type="text" class="input" placeholder="Номинал">
+								<input type="text" class="input" placeholder="Производитель">
+								<input type="text" class="input" placeholder="Работоспособность">
+								<div class="input__wrapper">
+									<input type="text" class="input" placeholder="Документация">
+									<a href="#" class="input__btn">
+										<img src="./src/img/input-btn/folder.svg" alt="">
+									</a>
+								</div>
+								<input type="text" class="input" placeholder="Состояние платы">
+							</div>
+
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="how-works how-works_app">
+
+			<div class="how-works__header ">
+				<h2 class="page__title">
+					Как работает приложение
+				</h2>
+				<div class="page__low-desc">
+					Приложение предназначено для использования на мобильных устройствах под управлением операционной системы
+					Android. Разработано в программной среде Android Studio и представляет собой клиент-серверное приложение
+				</div>
+			</div>
+
+			<div class="how-works__wrapper">
+
+				<div class="how-works__item">
+					<div class="how-works__text-wrapper">
+						<div class="markup__header ">
+							<div class="markup__num">1</div>
+							<div class="markup__title">
+								Загрузка изображение платы
+							</div>
+						</div>
+						<div class="markup__text">
+							Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее
+							осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в
+							домашних условиях.
+						</div>
+					</div>
+					<div class="how-works__img-wrapper">
+						<img src="./src/img/app-2.png" alt="">
+					</div>
+				</div>
+
+				<div class="how-works__item ">
+					<div class="how-works__img-wrapper">
+						<img src="./src/img/app-3.png" alt="">
+					</div>
+					<div class="how-works__text-wrapper">
+						<div class="markup__header">
+							<div class="markup__num">2</div>
+							<div class="markup__title">
+								Получение результата диагностики. <br>
+								Уточнение характеристик.
+							</div>
+						</div>
+						<div class="markup__text">
+							Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее
+							осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в
+							домашних условиях.
+						</div>
+					</div>
+
+				</div>
+
+				<div class="how-works__item ">
+					<div class="how-works__text-wrapper">
+						<div class="markup__header">
+							<div class="markup__num">3</div>
+							<div class="markup__title">
+								Сохранение результата
+							</div>
+						</div>
+						<div class="markup__text">
+							Сайт рыбатекст поможет дизайнеру, верстальщику, вебмастеру сгенерировать несколько абзацев более менее
+							осмысленного текста рыбы на русском языке, а начинающему оратору отточить навык публичных выступлений в
+							домашних условиях.
+						</div>
+					</div>
+					<div class="how-works__img-wrapper">
+						<img src="./src/img/app-4.png" alt="">
+					</div>
+				</div>
+
+			</div>
+
+		</section>
+
+	</main>
+
+	<footer>
+		<div class="footer__inner-wrapper">
+			<div class="footer__left">
+				<div class="logo">
+					Chip-vi
+				</div>
+				<div class="footer__copyright">
+					© Chip-vi
+				</div>
+			</div>
+
+
+			<div class="footer__right-wrapper">
+				<div class="footer__links">
+					Полезные ссылки
+					<a href="#" draggable="false" class="header__link">
+						Вопросы/Ответы
+					</a>
+					<a href="#" draggable="false" class="header__link">
+						Личный кабинет
+					</a>
+					<a href="#" draggable="false" class="header__link">
+						Приложение
+					</a>
+				</div>
+				<a href="#" class="page__trcy-btn">
+					Скачать приложение
+				</a>
+			</div>
+		</div>
+	</footer>
+
+</body>
+
+</html>

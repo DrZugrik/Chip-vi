@@ -1,0 +1,111 @@
+/* @font-face {
+	font-family: "Muller";
+	font-style: normal;
+	font-weight: 300;
+	font-display: swap;
+	src: local("Muller"),
+		url("src/fonts/MullerThin.woff2") format("woff2"),
+		url("src/fonts/MullerThin.woff") format("woff"),
+		url("src/fonts/MullerThin.otf") format("otf");
+}
+@font-face {
+	font-family: "Muller";
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src: local("Muller"),
+		url("src/fonts/MullerRegular.woff2") format("woff2"),
+		url("src/fonts/MullerRegular.woff") format("woff"),
+		url("src/fonts/MullerRegular.otf") format("otf");
+}
+@font-face {
+	font-family: "Muller";
+	font-style: italic;
+	font-weight: 400;
+	font-display: swap;
+	src: local("Muller"),
+		url("src/fonts/MullerRegularItalic.woff2") format("woff2"),
+		url("src/fonts/MullerRegularItalic.woff") format("woff"),
+		url("src/fonts/MullerRegularItalic.otf") format("otf");
+}
+@font-face {
+	font-family: "Muller";
+	font-style: normal;
+	font-weight: 500;
+	font-display: swap;
+	src: local("Muller"),
+		url("src/fonts/MullerMedium.woff2") format("woff2"),
+		url("src/fonts/MullerMedium.woff") format("woff"),
+		url("src/fonts/MullerMedium.otf") format("otf");
+}
+@font-face {
+	font-family: "Muller";
+	font-style: normal;
+	font-weight: 700;
+	font-display: swap;
+	src: local("Muller"),
+		url("src/fonts/MullerBold.woff2") format("woff2"),
+		url("src/fonts/MullerBold.woff") format("woff"),
+		url("src/fonts/MullerBold.otf") format("otf");
+} */
+
+@font-face {
+	font-family: "Montserrat";
+	font-style: normal;
+	font-weight: 300;
+	font-display: swap;
+	src: local("Montserrat"),
+		url("src/fonts/Montserrat/Montserrat-Thin.ttf") format("ttf");
+}
+
+@font-face {
+	font-family: "Montserrat";
+	font-style: normal;
+	font-weight: 400;
+	font-display: swap;
+	src: local("Montserrat"),
+		url("src/fonts/Montserrat/Montserrat-Regular.woff2") format("woff2"),
+		url("src/fonts/Montserrat/Montserrat-Regular.woff") format("woff"),
+		url("src/fonts/Montserrat/Montserrat-Regular.ttf") format("ttf");
+}
+
+@font-face {
+	font-family: "Montserrat";
+	font-style: italic;
+	font-weight: 400;
+	font-display: swap;
+	src: local("Montserrat"),
+		url("src/fonts/Montserrat/Montserrat-Italic.ttf") format("ttf");
+}
+
+
+@font-face {
+	font-family: "Montserrat";
+	font-style: normal;
+	font-weight: 500;
+	font-display: swap;
+	src: local("Montserrat"),
+		url("src/fonts/Montserrat/Montserrat-Medium.ttf") format("woff2"),
+		url("src/fonts/Montserrat/Montserrat-Medium.woff") format("woff"),
+		url("src/fonts/Montserrat/Montserrat-Medium.ttf") format("ttf");
+}
+
+@font-face {
+	font-family: "Montserrat";
+	font-style: normal;
+	font-weight: 600;
+	font-display: swap;
+	src: local("Montserrat"),
+		url("src/fonts/Montserrat/Montserrat-SemiBold.ttf") format("ttf");
+}
+
+@font-face {
+	font-family: "Montserrat";
+	font-style: normal;
+	font-weight: 700;
+	font-display: swap;
+	src: local("Montserrat"),
+		url("src/fonts/Montserrat/Montserrat-Bold.woff2") format("woff2"),
+		url("src/fonts/Montserrat/Montserrat-Bold.woff") format("woff"),
+		url("src/fonts/Montserrat/Montserrat-Bold.ttf") format("ttf");
+}

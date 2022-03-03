@@ -1,0 +1,99 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+
+<main>
+
+		<section class="how-works how-help">
+
+			<div class="how-works__header ">
+				<h1 class="page__title">
+					Помощь проекту
+				</h1>
+				<div class="page__low-desc">
+					Проект <span>Chip-vi</span> сейчас находится на стадии развития поэтому нам<br> пригодится любая посильная
+					помощь.
+					<br>
+					<br>
+					Как нам можно помочь? Очень просто!
+				</div>
+			</div>
+
+			<div class="how-works__wrapper">
+
+				<div class="how-works__item">
+					<div class="how-works__img-wrapper">
+						<img src="./src/img/help/help-1.png" alt="">
+					</div>
+					<div class="how-works__text-wrapper">
+						<div class="markup__header ">
+							<div class="markup__num">1</div>
+							<div class="markup__title">
+								Загрузка изображений <br> печатных плат и эл. схем
+							</div>
+						</div>
+						<div class="markup__text">
+							Центральной частью проекта являются нейросети и алгоритмы Big Data.
+							<br><br>
+							Для обучения нейросетей требуется много специфических фотографий печатных плат и электронных схем.
+							Соответственно чем их будет больше, тем лучше.
+							<br><br>
+							Вы можете помочь проекту просто загружая фотографии, после прохождения модерации они станут частью
+							датасета для обучения.
+						</div>
+					</div>
+
+				</div>
+
+				<div class="how-works__item ">
+					<div class="how-works__img-wrapper">
+						<img src="./src/img/help/help-2.png" alt="">
+					</div>
+					<div class="how-works__text-wrapper">
+						<div class="markup__header">
+							<div class="markup__num">2</div>
+							<div class="markup__title">
+								Разметка электронных компонентов на платах
+							</div>
+						</div>
+						<div class="markup__text">
+							Следующим этапом развития проекта является тренировка нейростей находить электронные компоненты на платах
+							(резисторы, конденсаторы, разъемы и т.д.), надписи, названия неизвестных плат и элементов.
+							<br><br>
+							Вы можете помочь размечать загруженные фотографии во встроенном редакторе.
+						</div>
+					</div>
+
+				</div>
+
+				<div class="how-works__item ">
+					<div class="how-works__img-wrapper">
+						<img src="./src/img/help/help-3.png" alt="">
+					</div>
+					<div class="how-works__text-wrapper">
+						<div class="markup__header">
+							<div class="markup__num">3</div>
+							<div class="markup__title">
+								Обратная связь
+							</div>
+						</div>
+						<div class="markup__text">
+							Если Вы нашли ошибки или у Вас есть идеи для развития проекта, Вы можете связаться с нами по электронной
+							почте, через форму обратной связи или написать комментарий в блоге.
+							<br><br>
+							Мы открыты для сотрудничества :)
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+
+		</section>
+
+	</main>
+
+
+{% endblock %}
