@@ -26,7 +26,7 @@ def register(request):
         form = UserRegisterForm(request.POST)
         if form.is_valid():
             form.save()
-            messages.error(request, 'егистрация пройдена!!!')
+            messages.error(request, 'Регистрация пройдена!!!')
             return redirect('login')
         else:
             messages.error(request, 'Ошибка регистрации')
@@ -42,8 +42,9 @@ def user_login(request):
             user = form.get_user()
             login(request, user)
             return redirect('home')
-        else:
-            form = UserLoginForm()
+    else:
+        form = UserLoginForm()
+        messages.error(request, 'Ошибка входа')
     return render(request, 'startpages/login.html', {"form": form})
 
 
