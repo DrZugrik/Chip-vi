@@ -5,6 +5,8 @@ from .forms import UserRegisterForm, UserLoginForm
 from django.contrib import messages
 from django.contrib.auth import login, logout
 
+
+
 # Create your views here.
 
 #from django.http import HttpResponse
@@ -18,6 +20,8 @@ def faq(request):
 def donate(request):
     return render(request, 'startpages/donate.html')
 
+def personal(request):
+    return render(request, 'startpages/personal_page.html')
 
 
 
@@ -25,9 +29,10 @@ def register(request):
     if request.method == 'POST':
         form = UserRegisterForm(request.POST)
         if form.is_valid():
-            form.save()
+            user = form.save()
             messages.error(request, 'Регистрация пройдена!!!')
-            return redirect('login')
+            login(request, user)
+            return redirect('home')
         else:
             messages.error(request, 'Ошибка регистрации')
     else:
@@ -46,6 +51,10 @@ def user_login(request):
         form = UserLoginForm()
         messages.error(request, 'Ошибка входа')
     return render(request, 'startpages/login.html', {"form": form})
+
+def user_logout(request):
+    logout(request)
+    return redirect('login')
 
 
 
