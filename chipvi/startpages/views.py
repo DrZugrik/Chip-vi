@@ -50,7 +50,7 @@ def user_login(request):
     else:
         form = UserLoginForm()
         messages.error(request, 'Ошибка входа')
-    return render(request, 'startpages/login.html', {"form": form})
+    return render(request, 'startpages/login3.html', {"form": form})
 
 def user_logout(request):
     logout(request)
