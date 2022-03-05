@@ -1,0 +1,63 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+	<main>
+
+		<div class="breadcrumps">
+			<a href="/">Главная</a>
+			<img src="{% static './src/img/breadcrump.svg' %}" alt="">
+			<a href="#">Страница пользователя</a>
+		</div>
+
+		<section class="stat">
+
+			<div class="stat__wrapper_login">
+
+				<div class="stat__login">
+
+					<div class="stat__user-info">
+						<div class="stat__avatar">
+							<img src="{% static './src/img/user-ava.svg' %}" alt="">
+						</div>
+						<div class="stat__id">
+							<div class="stat__name">User Name</div>
+							<div class="state__username">
+								username12365128
+							</div>
+						</div>
+					</div>
+
+
+					<form method="post">
+						{% csrf_token %}
+						{{ form.as_p }}
+						<button type="submit" class="btn btn-primry btn-block">Логин</button>
+					</form>
+
+					<div class="stat__pass-menu_login">
+						<input type="text" class="input" placeholder="Имя пользователя">
+						<input type="text" class="input" placeholder="Пароль">
+						<input type="text" class="input" placeholder="Повторите пароль">
+						<a href="#" class="page__blue-btn">Войти</a>
+					</div>
+					
+					<a href="#" class="stat__link-btn">
+						<img src="{% static './src/img/google-icon.png' %}" alt="">
+						Войти с помощью ...
+					</a>
+
+					
+				</div>
+
+
+
+			</div>
+
+		</section>
+
+
+	</main>
+
+{% endblock %}

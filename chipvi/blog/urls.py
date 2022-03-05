@@ -4,8 +4,18 @@ from django.urls import path, include
 
 from .views import *
 
-urlpatterns = [
+'''urlpatterns = [
     path('blog/', blog, name='blog'),
+    path('post/<str:slug>/', GetPost.as_view(), name='post'),
+
+]'''
+
+
+
+
+
+urlpatterns = [
+    path('blog/', Posts.as_view(), name='blog'),
     path('post/<str:slug>/', GetPost.as_view(), name='post'),
 
 ]
