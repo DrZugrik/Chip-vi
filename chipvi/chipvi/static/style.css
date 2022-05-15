@@ -1480,6 +1480,40 @@ footer .page__trcy-btn {
       flex-shrink: 0;
 }
 
+
+.stat .stat__login {
+  margin-bottom: 7.5rem;
+  padding: 2.5rem;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0.75rem 1.875rem 3.75rem rgba(15, 16, 17, 0.5);
+          box-shadow: 0.75rem 1.875rem 3.75rem rgba(15, 16, 17, 0.5);
+  border-radius: 1rem;
+
+}
+
+.stat .stat__wrapper_login {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+    align-items: center;
+    align-content: center; 
+    justify-content: center; 
+    overflow: auto; 
+  
+
+}
+
+.stat .stat__login {
+  border-right: 1px solid #E9EFF5;
+  padding-right: 2.5rem;
+  width: 19.375rem;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  
+  
+}
+
+
 .stat .stat__info {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
@@ -1646,7 +1680,11 @@ footer .page__trcy-btn {
   display: none;
 }
 
-.stat .stat__pass-menu .input {
+.stat .stat__pass-menu_login {
+  margin-top: 0.75rem; 
+}
+
+.stat__pass-menu_login .input {
   background: #E9EFF5;
   -webkit-box-shadow: none;
           box-shadow: none;

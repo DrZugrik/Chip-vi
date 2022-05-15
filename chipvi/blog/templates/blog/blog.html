@@ -60,21 +60,28 @@
 			{% endfor %}
 
 
-
-
-
-
+				{% if page_obj.has_other_pages %}
 				<div class="blog__pagination-wrapper">
-					<a href="#" class="blog__pagination">
-						< </a>
-							<a href="#" class="blog__pagination">1</a>
-							<a href="#" class="blog__pagination selected">2</a>
-							<a href="#" class="blog__pagination">3</a>
-							<a href="#" class="blog__pagination">...</a>
-							<a href="#" class="blog__pagination">23</a>
-							<a href="#" class="blog__pagination">24</a>
-							<a href="#" class="blog__pagination">></a>
+
+					{% if page_obj.has_other_pages %}
+						{% for p in page_obj.paginator.page_range %}
+							{% if page_obj.number == p %}
+								<a href="#" class="blog__pagination selected">{{ p }}</a>
+							{% elif p > page_obj.number|add:-3 and p < page_obj.number|add:3 %}
+								<a href="?page={{ p }}" class="blog__pagination">{{ p }}</a>
+							{% endif %}
+						{% endfor %}
+
+						{% if page_obj.has_next %}
+							<a class="page-numbers" href="?page={{ page_obj.next_page_number }}">
+								<i class="fa fa-angle-right" aria-hidden="true"></i>
+							</a>
+						{% endif %}
+					{% endif %}
+
 				</div>
+				{% endif %}
+
 			</div>
 
 
